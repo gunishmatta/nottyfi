@@ -4,7 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gunish.nottyfi.exception.ExceptionMapper;
 import com.gunish.nottyfi.model.Notification;
 import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Service;
 
+@Service
 public class NotificationServiceImpl implements NotificationService {
 
     private static final ObjectMapper mapper=new ObjectMapper();
